@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main */
+
+aside {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.añadir label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.añadir input,
+.añadir textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.añadir textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+.añadir input:focus,
+.añadir textarea:focus {
+    border-color: dodgerblue;
+}
+
+.container-btn {
+    text-align: center;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    background: #222e55;
+    border: none;
+    color: #000000;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    cursor: not-allowed;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn.enabled {
+    cursor: pointer;
+    background: dodgerblue;
+}
+
+.btn:hover:enabled {
+    background: #007acc;
+}
+
+/* section noticias */
+main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+main section {
+    padding: 30px;
+    background: radial-gradient(at right top, #455897, #1d2749);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    margin: 30px auto;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 800px;
+}
+
+.container-noticia {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.noticia {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    word-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.noticia h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #222e55;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.noticia:hover h2 {
+    color: #1d2749;
+}
+
+.noticia p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    overflow-wrap: break-word;
+}
+
+.evento {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #888;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.btn-edit,
+.btn-delet {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1em;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.btn-edit {
+    background: #198754;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #157347;
+    transform: scale(1.05);
+}
+
+.btn-delet {
+    background: #ff4444;
+    color: white;
+}
+
+.btn-delet:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+.btn-cerrar-sesion {
+    display: block;
+    padding: 10px 30px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    font-size: 16px;
+    width: auto;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: #c62828;
+}
+
+.nav {
+    display: none;
+    background: #00000080;
+}
+
+.link-btn,
+.dialog {
+    width: 75px;
+    cursor: pointer;
+}
+
+.link-btn img {
+    max-width: 100%;
+}
+
+dialog {
+    border: none;
+    background: radial-gradient(at right top, #455897, #1d2749);
+    border-radius: 16px;
+    padding: 1rem;
+    margin: auto;
+}
+
+dialog header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+dialog header img {
+    cursor: pointer;
+    width: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+        padding: 0 15px;
+    }
+
+    .nav {
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <title>E.E.S.T.N°5 de Lanús "John F. Kennedy"</title>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="./img/video3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <a href="index.html">
+            <div class="logo-section">
+                <img id="kennedy-logo" src="./img/logoAnimation.webp" alt="Logo Kennedy">
+            </div>
+        </a>
+
+        <ul class="nav-2">
+            <li class="add"><a class="label" href="./page/historia.html">Historia <img class="icon" src="./img/icon/book.png" alt="Icono Historia"></a></li>
+            <li class="add"><a class="label" href="./page/Autoridades.html">Autoridades <img class="icon" src="./img/icon/persona.png" alt="Icono Autoridades"></a></li>
+            <li class="add"><a class="label" href="./page/especialidades.html">Especialidades<img class="icon" src="./img/icon/foco.png" alt="Icono Especialidades"></a></li>
+            <li class="add"><a class="label" href="./page/inscripciones.html">Inscripción <img class="icon" src="./img/icon/papel.png" alt="Icono Inscripción"></a></li>
+            <li class="add"><a class="label" href="./page/contacto.html">Contactos <img class="icon" src="./img/icon/contacto.png" alt="Icono Contactos"></a></li>
+            <li class="add"><a class="label" href="./page/noticia.php">Noticias <img class="icon" src="./img/icon/news.png" alt="Icono Noticias"></a></li>
+        </ul>
+
+        <div class="menu">
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <section class="presentacion">
+        <h1 class="titulo">Escuela de Educación Secundaria Técnica N°5</h1>
+        <h2 class="subtitulo">John F. Kennedy</h2>
+    </section>
+
+    <div class="articulo">
+        <article class="artselec">
+            <a href="./page/inscripciones.html" class="tex">INSCRIPCIÓN CICLO LECTIVO 2024</a>
+        </article>
+
+        <article class="artselec">
+            <a href="./page/lista-ingresantes.html" class="tex">LISTA DE INGRESANTES A 1ER AÑO 2024</a>
+        </article>
+
+        <article class="artselec">
+            <a href="https://api.migato.live" class="tex">BIBLIOTECA</a> 
+        </article>
+    </div>
+    
+    <section class="main">
+        <button class="left" onclick="prevSlide()"><img src="img/left.svg" alt="Anterior"></button>
+        <div class="slider">
+            <div class="slide"><img src="./img/img-slider/img1.webp" alt="Foto 1"></div>
+            <div class="slide"><img src="./img/img-slider/img2.webp" alt="Foto 2"></div>
+            <div class="slide"><img src="./img/img-slider/img3.webp" alt="Foto 3"></div>
+            <div class="slide"><img src="./img/img-slider/img4.webp" alt="Foto 4"></div>
+            <div class="slide"><img src="./img/img-slider/img5.webp" alt="Foto 5"></div>
+            <div class="slide"><img src="./img/img-slider/img6.webp" alt="Foto 6"></div>
+            <div class="slide"><img src="./img/img-slider/img7.webp" alt="Foto 7"></div>
+            <div class="slide"><img src="./img/img-slider/img8.webp" alt="Foto 8"></div>
+            <div class="slide"><img src="./img/img-slider/img9.webp" alt="Foto 9"></div>
+            <div class="slide"><img src="./img/img-slider/img10.webp" alt="Foto 10"></div>
+            <div class="slide"><img src="./img/img-slider/img11.webp" alt="Foto 11"></div>
+            <div class="slide"><img src="./img/img-slider/img12.webp" alt="Foto 12"></div>
+            <div class="slide"><img src="./img/img-slider/img13.webp" alt="Foto 13"></div>
+            <div class="slide"><img src="./img/img-slider/img14.webp" alt="Foto 14"></div>
+            <div class="slide"><img src="./img/img-slider/img15.webp" alt="Foto 15"></div>
+            <div class="slide"><img src="./img/img-slider/img16.webp" alt="Foto 15"></div>
+            <div class="slide"><img src="./img/img-slider/img17.webp" alt="Foto 15"></div>
+        </div>
+        <button class="right" onclick="nextSlide()"><img src="img/right.svg" alt="Siguiente"></button>
+    </section>
+    
+    <footer class="ft">
+        <div class="cluster">
+            <div class="box">
+                <figure>
+                    <img src="./img/logoAnimation.webp" width="190" alt="Logo de la Escuela">
+                </figure>
+            </div>
+            <div>
+                <p class="negri">Escuela de Educación Técnica N°5 de Lanús</p>
+                <p>John Fitzgerald Kennedy</p>
+                <p>Ramón Cabrero 1751 (Código Postal: 1824)</p>
+                <p><span class="negri">Tel:</span> +54 9 11 4241-8547 / 4240-5026</p>
+                <p><span class="negri">Copyright ©</span> 2024 Escuela Técnica 5 Lanús John F. Kennedy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

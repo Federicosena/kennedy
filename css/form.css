@@ -1,0 +1,89 @@
+body {
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e9ecef;
+}
+
+form {
+    background: radial-gradient(at right top, #455897, #1d2749);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    padding: 12px;
+    width: calc(100% - 50px);
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 35px;
+    top: 37%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px; 
+    height: 24px;
+    user-select: none; 
+    display: none; 
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #be1300;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d60000; 
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #d80d0d; 
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}

@@ -1,0 +1,66 @@
+body {
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* main formulario */
+
+form {
+    background: radial-gradient(at right top, #455897, #1d2749);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px; 
+    color: #ffffff;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 14px;
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 19px; 
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: auto;
+    background: #0e6bcf;
+    color: #ffffff;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    background: #014fa1;
+}
