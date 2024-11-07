@@ -581,7 +581,9 @@ button:hover::after {
     }
 
     .artselec {
-        width: 90%;
+        width: 75%;
+        height: 60px;
+        border-radius: 14px;
 
         & .tex {
             font-size: 15px;
