@@ -355,13 +355,13 @@ p {
 
     .cubote {
         width: 100%;
-        max-width: 280px;
-        font-size: 20px;
+        max-width: 285px;
+        font-size: 17px;
         margin-top: 140px;
     }
 
     .cubo-text {
-        width: 315px;
+        width: 335px;
     }
 
     .burger {
