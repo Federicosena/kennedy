@@ -11,6 +11,43 @@ body {
     background-attachment: fixed;
 }
 
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.nav-2.active li {
+    animation: slideInFromRight 0.6s forwards;
+}
+
+.nav-2.closing li {
+    animation: slideOutToLeft 0.6s forwards;
+}
+
+.nav-2.active li:nth-child(1) { animation-delay: 0.1s; }
+.nav-2.active li:nth-child(2) { animation-delay: 0.2s; }
+.nav-2.active li:nth-child(3) { animation-delay: 0.3s; }
+.nav-2.active li:nth-child(4) { animation-delay: 0.4s; }
+.nav-2.active li:nth-child(5) { animation-delay: 0.5s; }
+.nav-2.active li:nth-child(6) { animation-delay: 0.6s; }
+
 /* *Overlay* */
 
 @keyframes slideDown {
@@ -537,6 +574,10 @@ p {
         margin: 12.5rem 0 0 0;
     }
 
+    .nav-2 li {
+        opacity: 0;
+    }
+
     .nav-2.active {
         display: flex;
         flex-direction: column;
@@ -583,6 +624,18 @@ p {
 
     .container-card {
         margin-top: 50%;
+    }
+
+    .titi{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .tito-2{
+        font-size: 25px;
     }
 }
 

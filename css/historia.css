@@ -482,5 +482,9 @@ p {
         flex-direction: column;
     }
 
+    .history-text{
+        width:335px;
+    }
+
     
 }
