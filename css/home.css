@@ -372,7 +372,6 @@ header a:hover {
 
 .articulo {
     margin-top: 10%;
-
 }
 
 .artselec {
@@ -577,6 +576,10 @@ button:hover::after {
         }
     }
 
+    .articulo{
+        margin-top: 15%;
+    }
+
     .artselec {
         width: 90%;
 
@@ -612,4 +615,13 @@ button:hover::after {
     button img {
         height: 24px;
     }
+
+/* 
+    .video-background video {
+       
+        width: 100%;
+        height: auto;
+    } 
+*/
+
 }
