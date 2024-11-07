@@ -635,7 +635,16 @@ p {
     }
 
     .tito-2{
-        font-size: 25px;
+        font-size: 24px;
+    }
+
+    .tito-3{
+        font-size: 22px;
+    }
+
+    .tito-4{
+        font-size: 22px;
+        margin-right: auto;
     }
 }
 
