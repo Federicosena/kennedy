@@ -628,6 +628,7 @@ p {
 
     .titi{
         font-size: 28px;
+        text-align: -webkit-center;
     }
 
     p{
