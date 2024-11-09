@@ -406,7 +406,7 @@ main .container .autoridades .secretario {
     }
 
     main .container{
-        width:335px;
+        width: 355px;
     }
 
     .nav-2.active {
@@ -445,8 +445,14 @@ main .container .autoridades .secretario {
         
     }
     
-    h2 {
-        font-size: 10px;
+    main h2 {
+        font-size: 29px;
+    }
+
+    main p{
+        font-size: 22px
+        
+        
     }
     
     .vicedirector,
@@ -457,4 +463,9 @@ main .container .autoridades .secretario {
     .cluster {
         flex-direction: column;
     }
+
+    .montiel{
+        width: 250px;
+    }
 }
+
