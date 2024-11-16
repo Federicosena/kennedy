@@ -159,7 +159,7 @@ a:hover {
 }
 
 .icon {
-    width: 63px;
+    width: 26px;
     padding: 4px;
     border-radius: 5px;
     -webkit-user-select: none;
@@ -495,6 +495,15 @@ h2 {
         font-size: 55px;
     }
 
+    .icon{
+        width: 63px;
+        padding: 5px;
+        border-radius: 6px;
+        -webkit-user-select: none;
+        user-select: none;
+        filter: invert(100%);
+    }
+
     .cuadroc {
         flex-direction: column;
         gap: 2px;
@@ -516,7 +525,7 @@ h2 {
     }
 
     p{
-        font-size: 29px;
+        font-size: 30px;
     }
 
     .pepote{
