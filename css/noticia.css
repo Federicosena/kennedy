@@ -146,6 +146,7 @@ a:hover {
 #kennedy-logo {
     height: 100%;
     transition: transform 0.3s ease-in-out;
+    /* margin-top: 62px; */
 }
 
 
@@ -158,8 +159,8 @@ a:hover {
 }
 
 .icon {
-    width: 26px;
-    padding: 2px;
+    width: 63px;
+    padding: 4px;
     border-radius: 5px;
     -webkit-user-select: none;
     user-select: none;
@@ -235,11 +236,12 @@ a:hover {
 .burger {
     display: none;
     position: relative;
-    width: 45px;
-    height: 33px;
+    width: 120px; /* Aumenta el ancho */
+    height: 90px; /* Aumenta la altura */
     background: transparent;
     cursor: pointer;
-    margin-left: 193px;
+    margin-left: 480px;
+    margin-top: 225px;
 }
 
 .burger input {
@@ -249,8 +251,8 @@ a:hover {
 .burger span {
     display: block;
     position: absolute;
-    height: 4px;
-    width: 100%;
+    height: 12px; /* Grosor aumentado */
+    width: 100%; /* Mantén el ancho relativo al contenedor */
     background: white;
     border-radius: 9px;
     opacity: 1;
@@ -278,8 +280,8 @@ a:hover {
 
 .burger input:checked~span:nth-of-type(1) {
     transform: rotate(45deg);
-    top: -3px;
-    left: 5px;
+    top: -10px; /* Ajuste mayor en la posición */
+    left: 15px; /* Ajuste mayor en el centrado */
 }
 
 .burger input:checked~span:nth-of-type(2) {
@@ -289,9 +291,10 @@ a:hover {
 
 .burger input:checked~span:nth-of-type(3) {
     transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
+    top: 75px; /* Ajuste mayor en la posición */
+    left: 15px; /* Ajuste mayor en el centrado */
 }
+
 
 
 /* Main */
@@ -417,7 +420,25 @@ h2 {
 
 /* Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 7000px) {
+
+    .logo-section {
+        height: 210%; /* Ajusta la altura */
+        width: 150%; /* Ajusta el ancho para mantener el aspecto circular */
+        border-radius: 50%; /* Hace el contenedor circular */
+        max-height: none; /* Eliminar restricción de tamaño máximo */
+        max-width: none; /* Eliminar restricción de tamaño máximo */
+        position: relative;
+        top: 110px; 
+        left: 20px;
+    }
+
+    #kennedy-logo {
+        height: 100%; /* Asegura que el logo se ajuste al contenedor */
+        width: 100%;  /* Asegura que el logo se ajuste al contenedor */
+        object-fit: cover; /* Asegura que el logo se ajuste bien dentro del contenedor */
+    }
+    
     .nav-2 {
         display: none;
     }
@@ -439,15 +460,15 @@ h2 {
     }
 
     .add {
-        width: 38vw;
+        width: 44vw;
         height: 7vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 15px;
-        padding: 9px 32px;
+        border-radius: 28px;
+        padding: 10px 37px;
         cursor: pointer;
-        box-shadow: 0 0 8px #ffffffb3;
+        box-shadow: 0 0 25px #ffffffb3;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -460,8 +481,8 @@ h2 {
         align-items: center;
         justify-content: center;
         position: absolute;
-        gap: 1.5rem;
-        top: 120%;
+        gap: 3.5rem;
+        top: 253%;
         left: 0;
         opacity: 1;
     }
@@ -471,7 +492,7 @@ h2 {
     }
 
     a{
-        font-size: 23px;
+        font-size: 55px;
     }
 
     .cuadroc {
