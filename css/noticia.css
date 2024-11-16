@@ -420,7 +420,7 @@ h2 {
 
 /* Responsive */
 
-@media screen and (max-width: 7000px) {
+@media screen and (max-width: 1025px) {
 
     .logo-section {
         height: 210%; /* Ajusta la altura */
@@ -507,20 +507,19 @@ h2 {
     }
 
     .pepito{
-        margin-top: 30%;
-        font-size: 22px;
-
+        margin-top: 32%;
+        font-size: 48px;
     }
 
     h2{
-        font-size: 24px;
+        font-size: 35px;
     }
 
     p{
-        font-size: 18px;
+        font-size: 23px;
     }
 
     .pepote{
-        width: 90%;
+        width: 900%;
     }
 }
