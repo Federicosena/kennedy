@@ -399,6 +399,16 @@ h2 {
     width: 100%;
     background: radial-gradient(at right top, #455897, #1d2749);
     margin-top: 20px;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     .cluster {
         display: flex;
@@ -421,22 +431,40 @@ h2 {
 /* Responsive */
 
 @media screen and (max-width: 1025px) {
+.box {
+        width: 100%
+    }
 
+    .ft p {
+        font-size: 38px;
+        margin: 41px 1px;
+    }
+
+    .ft img {
+        width: 67%;
+        height: auto;
+        margin-left: 168px;
+        margin-right: 0;
+        display: block;
+    }
+
+    
     .logo-section {
-        height: 210%; /* Ajusta la altura */
-        width: 150%; /* Ajusta el ancho para mantener el aspecto circular */
-        border-radius: 50%; /* Hace el contenedor circular */
-        max-height: none; /* Eliminar restricción de tamaño máximo */
-        max-width: none; /* Eliminar restricción de tamaño máximo */
+        height: 210%; 
+        width: 150%;
+        border-radius: 50%; 
+        max-height: none; 
+        max-width: none; 
         position: relative;
         top: 110px; 
         left: 20px;
     }
 
     #kennedy-logo {
-        height: 100%; /* Asegura que el logo se ajuste al contenedor */
-        width: 100%;  /* Asegura que el logo se ajuste al contenedor */
-        object-fit: cover; /* Asegura que el logo se ajuste bien dentro del contenedor */
+        height: 100%; 
+        width: 100%;  
+        object-fit: cover; 
+    
     }
     
     .nav-2 {
@@ -506,18 +534,19 @@ h2 {
 
     .cuadroc {
         flex-direction: column;
-        gap: 2px;
-        align-items: center;
-        justify-content: center;
+        gap: 10px;
+        
     }
 
     .cluster {
         flex-direction: column;
+        
     }
+
 
     .pepito{
         margin-top: 32%;
-        font-size: 30px;
+        font-size: 46px;
     }
 
     h2{
