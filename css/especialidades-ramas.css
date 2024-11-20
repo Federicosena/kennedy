@@ -53,14 +53,11 @@ body {
 @keyframes slideDown {
     0% {
         transform: translateY(-100%);
-        /* Inicia fuera de la pantalla */
         opacity: 0;
-        /* Opcional: Hace que el overlay aparezca gradualmente */
     }
 
     100% {
         transform: translateY(0);
-        /* Llega a su posición original */
         opacity: 1;
     }
 }
@@ -72,26 +69,19 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    /* Fondo semi-transparente */
     z-index: 10;
     transform: translateY(-100%);
-    /* Comienza fuera de la pantalla, arriba */
     transition: transform 0.5s ease-out;
-    /* Transición suave */
     display: none;
-    /* Inicialmente oculto */
 }
 
 #overlay.active {
     display: block;
-    /* Mostrar overlay cuando esté activo */
     transform: translateY(0);
-    /* Mover overlay a la posición original */
 }
 
 #overlay.closing {
     transform: translateY(-100%);
-    /* Mover overlay hacia arriba al cerrar */
 }
 
 /* Header */
@@ -134,7 +124,6 @@ header {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     }
   
-    /* Sección del logo */
     .logo-section {
         display: flex;
         justify-content: center;
@@ -644,7 +633,7 @@ p {
     }
 
     .tito-4{
-        font-size: 22px;
+        font-size: 20px;
         margin-right: auto;
     }
 }
